@@ -21,12 +21,14 @@ subprojects {
     afterEvaluate {
         def spotless = tasks.findByName('spotlessApply')
         if (spotless) {
-            tasks.withType(JavaCompile) {
+            tasks.withType(JavaCompile).configureEach {
                 finalizedBy(spotless)
             }
 
-            tasks.withType(GroovyCompile) {
-                finalizedBy(spotless)
+            tasks.withType(GroovyCompile).tap {
+                configureEach {
+                    finalizedBy(spotless)
+                }
             }
         }
     }

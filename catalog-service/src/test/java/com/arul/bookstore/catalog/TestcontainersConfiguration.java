@@ -1,4 +1,4 @@
-package com.arul.catalog.service;
+package com.arul.bookstore.catalog;
 
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.testcontainers.service.connection.ServiceConnection;

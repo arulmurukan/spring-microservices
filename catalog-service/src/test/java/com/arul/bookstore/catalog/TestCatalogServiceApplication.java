@@ -1,4 +1,4 @@
-package com.arul.catalog.service;
+package com.arul.bookstore.catalog;
 
 import org.springframework.boot.SpringApplication;
 

@@ -13,6 +13,9 @@ spring:
     password: ${DB_PASSWORD:postgres}
   jpa:
     open-in-view: false
+######## Catalog Service Configuration  #########
+catalog:
+  page-size: 10
 
 management:
   endpoints:
